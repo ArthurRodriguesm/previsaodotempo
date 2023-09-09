@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Montserrat';
+    height: 100vh;
+    background-image: linear-gradient(45deg, #08748f, #2fb2d3, #49bbd8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #08748f;
+    background-color: #2fb2d3;
+    color: #08748f;
+    margin-bottom: 10px;
+}
+.interface{
+    width: 95%;
+    height: 40vh;
+    margin: 0 auto;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.input-data > .item{
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+.input-data > .item:nth-child(1){
+    text-transform: uppercase;
+    color: #fff;
+}
+.input-data > .item:nth-child(1)::placeholder{
+    color: #fff;
+}
+.input-data > .item:nth-child(2){  
+    background-color: #08748f;
+    color: #fff;
+    font-weight: 500;
+}
+.input-data > .item:nth-child(2):hover{
+    color: #2fb2d3;
+    cursor: pointer;
+    transition: .8s;
+    ;
+}
+.result{
+    visibility: hidden;
+    width: 95%;
+    background-color: #08748f;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.result > .img{
+    width: 30%;
+}
+
+footer .social-media{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .social-media > a:hover{
+    border-bottom: 3px solid #08748f;
+}
